@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion JS</title>
+    <!-- Estilos boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container p-3 d-flex gap-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 1</h5>
+                <p class="card-text">Módulo de Tesorería: Pago de Permisos (Cálculos y Retorno)</p>
+                <input type="text" class="form-control mb-3" id="input1" placeholder="Ingresar un valor">
+                <a href="#" onclick="pagoPermisos()" class="btn btn-primary">Ejecutar</a>
+                <div id="container1" class="mt-4 d-none">
+                    <h5>Resultado: </h5>
+                    <div id="result1" class="alert alert-success fw-bold">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 2</h5>
+                <p class="card-text">Módulo de Salud: Fila de Vacunación (Arreglos y Prioridad)</p>
+                <input type="text" class="form-control mb-3" id="input2" placeholder="Ingresar un nombre">
+
+                <button onclick="vacunacion()">Paciente no urgente</button>
+                <button onclick="vacunaciones()">Paciente urgente</button>
+
+                <!-- <a href="#" onclick="ingresarVacunacion()" class="btn btn-primary">Ejecutar</a> -->
+                <div id="container2" class=" mt-4 d-none">
+                    <h5>Resultado: </h5>
+                    <div id="result2" class="alert alert-success fw-bold">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicio 3</h5>
+                <p class="card-text">Módulo de Subsidios: Buscador de Beneficiarios (Ciclos e If)</p>
+                <input type="text" class="form-control mb-3" id="input3" placeholder="Despache o cancele su pedido">
+                <a href="#" onclick="subsidios()" class="btn btn-primary">Ejecutar</a>
+                <div id="container3" class=" mt-4 d-none">
+                    <h5>Resultado: </h5>
+                    <div id="result3" class="alert alert-success fw-bold">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Script JS -->
+    <script src="static/js/script.js"></script>
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
